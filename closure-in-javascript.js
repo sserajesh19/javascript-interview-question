@@ -19,3 +19,21 @@ const anotherCounter = createCounter();
 
 console.log(anotherCounter()); // Output: 1
 console.log(anotherCounter()); // Output: 2
+
+
+//--------------------------------------------------------------------------
+
+function add(a) {
+    let count = a;  // Initialize count with the first argument
+    return function sum(b) {
+        if (b === undefined) {
+            return count;
+        } else {
+            count += b;
+            return sum;
+        }
+    };
+}
+
+console.log(add(2)(3)());  // 5
+console.log(add(1)(2)(3)(4)());  // 10
