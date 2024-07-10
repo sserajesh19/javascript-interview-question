@@ -5,3 +5,4 @@ javascript interview question
 # Create closure-in-javascript.js
 # Create temporal-dead-zone.js
 # Create convert-function-to-promise.js
+# create flat array using javascript
